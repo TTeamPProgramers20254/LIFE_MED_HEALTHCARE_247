@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins','sans-serif';
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #6A9C89;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #16423C;
+}
+
+p {
+    color: white;
+}
+
+.team h2{
+    margin-bottom: 30px;
+}
+
+
+.logo img {
+    width: 300px;
+    }
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #C4DAD2;
+}
+
+.about-section, .mission-vision, .team {
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 900px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1, .about-section p, .mission-vision h2, .mission-vision p, .team p {
+    color: #16423C;
+    text-align: center;
+}
+
+.mission-vision p {
+    text-align: center;
+    color: #555;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-member {
+    flex: 1 1 30%;
+    margin: 15px;
+    padding: 20px;
+    background: whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 3px solid #0056b3;
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #16423C;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}

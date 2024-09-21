@@ -1,0 +1,151 @@
+/* General Reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','sans-serif';
+}
+
+body {
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #6A9C89;
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.company-logo {
+    width: 300px;
+    margin-left: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav a:hover {
+    color: #d7ccc8;
+}
+
+/* Main Section */
+main {
+    flex: 1;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doctor-section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.doctor-section h1 {
+    font-size: 2.5em;
+    color: #16423C;
+    margin-bottom: 20px;
+}
+
+#ai-doctor-form input[type="text"] {
+    width: 80%;
+    padding: 15px;
+    font-size: 1.1em;
+    border: 2px solid #16423C;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: border 0.3s ease-in-out;
+}
+
+#ai-doctor-form input[type="text"]:focus {
+    border-color: #16423C;
+    outline: none;
+}
+
+#ai-doctor-form button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #16423C;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#ai-doctor-form button:hover {
+    background-color: #6A9C89;
+}
+
+/* Results Section */
+#results {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.result-item {
+    background-color: #f1f8e9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-item h3 {
+    font-size: 1.5em;
+    color: #16423C;
+}
+
+.result-item p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.result-item a {
+    color: #16423C;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.result-item a:hover {
+    color: #16423C;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #16423C;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1em;
+    margin-top: auto;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}

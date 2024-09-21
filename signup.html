@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | LIFEMED</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="LIFE MED.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="ai-doctor.html">AI Doctor</a></li>
+                <li><a href="medicine.html">Medicine</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li id="userAuth"><a href="signup.html">Login | Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="signup-section">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required maxlength="8">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 LIFEMED healthcare24/7. All rights reserved.</p>
+    </footer>
+
+    <script src="auth.js"></script>
+</body>
+</html>

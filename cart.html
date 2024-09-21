@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Medical Website</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="ai-doctor.html">AI Doctor</a></li>
+            <li><a href="medicine.html">Medicines</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li id="user-status"><a href="login.html">Login | Sign Up</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="cart-container">
+    <h1>Your Cart</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="cart-table-body">
+            <!-- Cart items will be dynamically injected here -->
+        </tbody>
+    </table>
+    <div class="cart-summary">
+        <span id="cart-total">Total: $0.00</span>
+        <a href="checkout.html" class="cta-btn">Proceed to Checkout</a>
+    </div>
+</div>
+
+<footer>
+    © 2024 LIFEMED healthcare24/7. All rights reserved.
+</footer>
+
+<script src="cart.js"></script>
+</body>
+</html>

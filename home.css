@@ -1,0 +1,130 @@
+/* Main Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #002F6C;
+    color: #fff;
+}
+
+.logo {
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #4FC3F7;
+}
+
+.main-page {
+    background: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    padding: 100px 20px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #4FC3F7;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.4em;
+    font-weight: 600;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.cta-button:hover {
+    background-color: #0288D1;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.feature {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+}
+
+.feature h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #002F6C;
+}
+
+.feature p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.feature-button {
+    background-color: #4FC3F7;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.feature-button:hover {
+    background-color: #0288D1;
+}
+
+footer {
+    background-color: #002F6C;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

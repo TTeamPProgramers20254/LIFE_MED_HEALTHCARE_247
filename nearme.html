@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Doctors Near Me | Medical Website</title>
+    <link rel="stylesheet" href="doctor.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="doctor_near_me.js" defer></script>
+    <script src="https://kit.fontawesome.com/3932dc5d0a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    
+    <header>
+        <div class="logo">
+            <img src="LIFE MED.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="ai-doctor.html">AI Doctor</a></li>
+                <li><a href="medicine.html">Medicine</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li id="userAuth"><a href="login.html">Login | Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Trusted Doctors Near You</h1>
+            <p>Discover certified medical professionals in your area and book an appointment with ease.</p>
+            <a href="#doctor-list" class="cta-btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Doctor List Section -->
+    <section class="doctor-list" id="doctor-list">
+        <div class="container">
+            <h2>Available Doctors & Hospitals Near You</h2>
+
+            <div class="doctor-card">
+                <h3>Dr. Priyank Rathod</h3>
+                <h4>Phone: 095378 28880</h4>
+                <p>Address: Gayatri Krupa Building, Sardar Bhavan Ln, Kadwa Sheri, Raopura, Vadodara, Gujarat 390001</p>
+                <button class="appointment-btn" data-doctor="Dr. Prinyank Rathod ">Book Appointment</button>
+            </div>
+
+            <div class="doctor-card">
+                <h3>HCG Cancer Hospital - (Atladara, Vadodara)</h3>
+                <h4>Phone: 095378 28880</h4>
+                <p>Location: Sun-Pharma Atladra Rd, near Pramukh Swami nagar, Pramukh Swami nagar, Atladara, Vadodara, Gujarat 390012</p>
+                <button class="appointment-btn" data-doctor="HCG Cancer Hospital">Book Appointment</button>
+            </div>
+
+            <div class="doctor-card">
+                <h3>Himalaya Cancer Hospital & Research Institute</h3>
+                <h4>Phone: 070432 20905</h4>
+                <p>Location: 4, Vinodbaug, Jetalpur Rd, near Railway Station, Anand Nagar, Alkapuri, Vadodara, Gujarat 390007</p>
+                <button class="appointment-btn" data-doctor="Himalaya Cancer Hospital & Research Institute">Book Appointment</button>
+            </div>
+
+            <div class="doctor-card">
+                <h3>Dr. Mihir Shah</h3>
+                <h4>Phone: 099090 44848</h4>
+                <p>Location: Sunshine global hospital, behind ICICI bank, Lalbaug, Manjalpur, Vadodara, Gujarat 390011</p>
+                <button class="appointment-btn" data-doctor="Dr. Mihir Shah">Book Appointment</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login/Sign-up Modal -->
+    <div class="modal" id="authModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Login or Sign Up</h2>
+            <form id="authForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <button type="submit" id="authSubmit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Appointment Modal -->
+    <div class="modal" id="appointmentModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Appointment Confirmation</h2>
+            <p id="appointmentDetails"></p>
+            <button id="confirmAppointmentBtn">Confirm Appointment</button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>© 2024 LIFEMED healthcare24/7. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

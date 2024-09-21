@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout | Medical Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="logo.png" alt="Medical Website Logo" class="logo">
+            <nav id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="ai-doctor.html">AI Doctor</a>
+                <a href="medicine.html">Medicine</a>
+                <a href="cart.html">Cart</a>
+                <span id="user-info"></span>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Logging out...</h2>
+    </main>
+
+    <footer>
+        <p>© 2024 Medical Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Clear user data
+        localStorage.removeItem('user');
+        // Redirect to home or login page
+        setTimeout(function() {
+            window.location.href = 'index.html';
+        }, 1000);
+    </script>
+</body>
+</html>

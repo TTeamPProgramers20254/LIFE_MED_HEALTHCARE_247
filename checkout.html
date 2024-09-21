@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Medical Website</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="LIFE MED.png" alt=""></div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="ai-doctor.html">AI Doctor</a></li>
+                <li><a href="medicine.html">Medicine</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li id="user-info"><a href="#" id="login-signup">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="checkout-section">
+        <h1>Checkout</h1>
+        <p>Please review your order and proceed to payment.</p>
+        
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <table id="order-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="order-items">
+                    <!-- Items will be populated here -->
+                </tbody>
+            </table>
+            <div class="total-price" id="total-price">Total: $0.00</div>
+        </div>
+        
+        <div class="payment-options">
+            <label>
+                <input type="radio" name="payment" value="cash" checked> Cash on Delivery
+            </label>
+            <label>
+                <input type="radio" name="payment" value="upi"> UPI
+            </label>
+        </div>
+        
+        <button class="cta-btn" id="proceed-payment">Proceed to Payment</button>
+        <div id="transaction-message" style="margin-top: 20px;"></div>
+    </div>
+
+    <footer>
+        © 2024 LIFEMED healthcare24/7. All rights reserved.
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
